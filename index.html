@@ -95,7 +95,7 @@
 
         // Function to perform search
         function performSearch(query) {
-            fetch(`https://atinas.alreflections.net/search/api.php?type=business&q=${encodeURIComponent(query)}`)
+            fetch(`https://atinas.alreflections.net/search/api.php?type=business_profile&q=${encodeURIComponent(query)}`)
                 .then(response => response.json())
                 .then(data => {
                     displayResults(data);
